@@ -33,8 +33,8 @@ function win(userChoice, computerChoice){
 }
 
 function lose(userChoice, computerChoice){
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
+    const smallUserWord = "máquina".fontsize(3).sub();
+    const smallCompWord = "você".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
     computerScore++;
     userScore_span.innerHTML = userScore;
@@ -45,8 +45,8 @@ function lose(userChoice, computerChoice){
 }
 
 function draw(userChoice, computerChoice){
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
+    const smallUserWord = "máquina".fontsize(3).sub();
+    const smallCompWord = "você".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
     result_p.innerHTML = `${convertToWord(userChoice)}(smallUserWord) igual a ${convertToWord(computerChoice)}(smallCompWord). Empatou.`;
     userChoice_div.classList.add('gray-glow');
